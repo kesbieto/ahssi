@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* Side Navigation*/
+.sidebar {
+    min-height: calc(103.3vh - 97px);
+    background: #D3D3D3;
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    padding: 0;
+    width: 220px;
+    z-index: 11;
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+}
+
+.sidebar .nav {
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    font-size: 40x;
+    line-height: 1;
+    margin-right: 1rem;
+    color: #484848;
+}
+
+.sidebar .nav .nav-item.active > .nav-link {
+    background: #fff;
+    position: relative;
+    font-weight: bold;
+    /* font-size: 25px; */
+}
+
+.sidebar .nav .nav-item.active {
+    /* border-radius: 0px 20px 20px 0px; */
+}
+
+.sidebar .nav .nav-item .nav-link {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+	font-size: 20px;
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px 35px 10px 35px;
+    color: #484848;
+    /* border-radius: 0px 20px 20px 0px; */
+    -webkit-transition-duration: 0.45s;
+    -moz-transition-duration: 0.45s;
+    -o-transition-duration: 0.45s;
+    transition-duration: 0.45s;
+    transition-property: color;
+    -webkit-transition-property: color;
+    font-weight: 400;
+}
+
+.menu-title {
+	padding-left:10px;
+}
+
+/* Staff Admin */
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: calc(0.25rem - 5px) calc(0.25rem - 1px) 0 0;
+}
